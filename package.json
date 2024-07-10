@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
+    "start": "expo start --web --port 3000",
+    "dev": "expo start --web --port 3000",
     "android": "DARK_MODE=media expo start --android",
     "ios": "DARK_MODE=media expo start --ios",
-    "web": "DARK_MODE=class expo start --web",
+    "web": "DARK_MODE=class expo start --web 3000",
     "postinstall": "patch-package"
   },
   "dependencies": {
